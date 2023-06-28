@@ -8,8 +8,11 @@ import nodejs from '../assets/tech/nodejs.png';
 import mongodb from '../assets/tech/mongodb.png';
 import tailwind from '../assets/tech/tailwind.png';
 import figma from '../assets/tech/figma.png';
+import git from '../assets/tech/github.png';
+import backend from '../assets/tech/backend.png';
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { Tilt } from 'react-tilt';
 
 
 
@@ -93,63 +96,91 @@ const Skils = () => {
                     </div>
                 </div>
                 <div className='flex gap-5 pb-10'>
-                    <motion.div
-                        className='h-[250px] w-[200px] bg-[#2a2c39] card'
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                        transition={{ duration: 0.5 }}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    >
-                        <div>hlw</div>
-                    </motion.div>
-                    <motion.div
-                        className='h-[250px] w-[200px] bg-[#2a2c39] card'
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    ></motion.div>
-                    <motion.div
-                        className='h-[250px] w-[200px] bg-[#2a2c39] card'
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    ></motion.div>
-                    <motion.div
-                        className='h-[250px] w-[200px] bg-[#2a2c39] card'
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                        transition={{ duration: 0.5, delay: 0.6 }}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    ></motion.div>
-                    <motion.div
-                        className='h-[250px] w-[200px] bg-[#2a2c39] card'
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                        transition={{ duration: 0.5, delay: 0.8 }}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    ></motion.div>
-                    <motion.div
-                        className='h-[250px] w-[200px] bg-[#2a2c39] card'
-                        initial={{ opacity: 0, x: -100 }}
-                        animate={controls}
-                        transition={{ duration: 0.5, delay: 1 }}
-                        variants={{
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                        
-                    ></motion.div>
+                    <Tilt>
+                        <motion.div
+                            className='h-[250px] mt-10 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={controls}
+                            transition={{ duration: 0.5 }}
+                            variants={{
+                                visible: { opacity: 1, x: 0 },
+                            }}
+                        >
+                            <img className='w-32 ' src={html} alt="" />
+                            <p className="text-white">HTML 5</p>
+                        </motion.div>
+                    </Tilt>
+                    <Tilt>
+                        <motion.div
+                            className="h-[250px] w-[180px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center"
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={controls}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            variants={{
+                                visible: { opacity: 1, x: 0 },
+                            }}
+                        >
+                            <img className='w-32' src={css} alt="" />
+                            <p className="text-white">CSS 3</p>
+                        </motion.div>
+                    </Tilt>
+                    <Tilt>
+                        <motion.div
+                            className='h-[250px] -mt-5 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={controls}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                            variants={{
+                                visible: { opacity: 1, x: 0 },
+                            }}
+                        >
+                            <img className='w-32' src={js} alt="" />
+                            <p className="text-white">Javascript</p>
+                        </motion.div>
+                    </Tilt>
+                    <Tilt>
+                        <motion.div
+                            className='h-[250px] -mt-5 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={controls}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            variants={{
+                                visible: { opacity: 1, x: 0 },
+                            }}
+                        >
+                            <img className='w-32' src={react} alt="" />
+                            <p className="text-white">React Js</p>
+                        </motion.div>
+                    </Tilt>
+                    <Tilt>
+                        <motion.div
+                            className='h-[250px] w-[180px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={controls}
+                            transition={{ duration: 0.5, delay: 0.8 }}
+                            variants={{
+                                visible: { opacity: 1, x: 0 },
+                            }}
+                        >
+                            <img className='w-32' src={git} alt="" />
+                            <p className="text-white">GitHub</p>
+                        </motion.div>
+                    </Tilt>
+                    <Tilt>
+                        <motion.div
+                            className='h-[250px] mt-10 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={controls}
+                            transition={{ duration: 0.5, delay: 1 }}
+                            variants={{
+                                visible: { opacity: 1, x: 0 },
+                            }}
+
+                        >
+                            <img className='w-32' src={backend} alt="" />
+                            <p className="text-white">Backend</p>
+                        </motion.div>
+                    </Tilt>
                 </div>
             </div>
         </div>

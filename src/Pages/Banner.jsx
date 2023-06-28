@@ -8,39 +8,53 @@ import Button from '../Components/Navbar/Button/Button';
 
 
 const Banner = () => {
+    const handleDownloadResume = () => {
+
+        const resumeUrl = 'https://drive.google.com/file/d/13C4mVzf2h2C-yJWuBkBtv-HNTtkIvxhB/view?usp=sharing';
+
+
+        const link = document.createElement('a');
+        link.href = resumeUrl;
+        link.download = 'resume.pdf';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+   
     return (
         <>
-        
-        <div style={{ backgroundImage: `url("${bg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className="pb-8">
-            <Navbar />
-            <div className='max-w-screen-xl pt-28  mx-auto md:flex items-center justify-between'>
-                <div className='w-1/2 '>
-                    <p className='-mt-40 text-white text-5xl mb-10 font-bold'>Hello Im <br /> Barakat Tanzil</p>
-                    <img className='rounded-full  my-5' src={animation} alt="" />
-                    <TypeAnimation
-                        sequence={[
-                            'I Am a MERN Stack Web Developer',
-                            1000, 
-                            'I Am a Front-End Web Developer',
-                            1000,
-                            'I Am a Web Designer',
-                            1000,
-                        ]}
-                        wrapper="span"
-                        speed={30}
-                        style={{ fontSize: '2em', display: 'inline-block', color: 'white'  }}
-                        repeat={Infinity}
-                    />
-                    <div className='mt-10'>
-                       <Button text="Get Resume"></Button>
+
+            <div style={{ backgroundImage: `url("${bg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className="pb-8">
+                <Navbar />
+                <div className='max-w-screen-xl pt-32  mx-auto md:flex items-center justify-between'>
+                    <div className='w-1/2 '>
+                        <p className='-mt-40 text-white text-5xl mb-10 font-bold'>Hello Im <br /> Barakat Tanzil</p>
+                        <img className='rounded-full  my-5' src={animation} alt="" />
+                        <TypeAnimation
+                            sequence={[
+                                'I Am a MERN Stack Web Developer',
+                                1000,
+                                'I Am a Front-End Web Developer',
+                                1000,
+                                'I Am a Web Designer',
+                                1000,
+                            ]}
+                            wrapper="span"
+                            speed={30}
+                            style={{ fontSize: '2em', display: 'inline-block', color: 'white' }}
+                            repeat={Infinity}
+                        />
+                        <div onClick={handleDownloadResume} className='mt-10'>
+                            <Button text="Get Resume"></Button>
+                        </div>
+                    </div>
+                    <div style={{ backgroundImage: `url("${mbg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className='rounded-full shadow-xl shadow-blue-600' >
+                        <img className='rounded-full' src={mypic} alt="" />
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url("${mbg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className='rounded-full shadow-xl shadow-blue-600' >
-                    <img className='rounded-full' src={mypic} alt="" />
-                </div>
             </div>
-        </div>
-        
+
         </>
     );
 };
