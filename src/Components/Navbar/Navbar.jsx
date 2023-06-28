@@ -2,7 +2,7 @@
 
 const Navbar = () => {
     return (
-        <div className="sticky z-10 flex max-w-screen-xl justify-between mx-auto items-center bg-blue-950 rounded-full p-5">
+        <div className="fixed z-10 flex w-full justify-between mx-auto items-center bg-blue-950 rounded-full p-5">
             <div>
                 web Hero 
             </div>
