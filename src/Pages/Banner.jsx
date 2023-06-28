@@ -16,7 +16,7 @@ const Banner = () => {
             <div className='max-w-screen-xl pt-28  mx-auto md:flex items-center justify-between'>
                 <div className='w-1/2 '>
                     <p className='-mt-40 text-white text-5xl mb-10 font-bold'>Hello Im <br /> Barakat Tanzil</p>
-                    <img className='rounded-full my-5' src={animation} alt="" />
+                    <img className='rounded-full  my-5' src={animation} alt="" />
                     <TypeAnimation
                         sequence={[
                             'I Am a MERN Stack Web Developer',
@@ -35,7 +35,7 @@ const Banner = () => {
                        <Button text="Get Resume"></Button>
                     </div>
                 </div>
-                <div style={{ backgroundImage: `url("${mbg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className='rounded-full' >
+                <div style={{ backgroundImage: `url("${mbg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className='rounded-full shadow-xl shadow-blue-600' >
                     <img className='rounded-full' src={mypic} alt="" />
                 </div>
             </div>
