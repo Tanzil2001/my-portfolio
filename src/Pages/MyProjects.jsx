@@ -7,7 +7,8 @@ import '../Pages/MyProjects.css'
 const MyProjects = () => {
 
     return (
-        <div className='max-w-screen-xl mx-auto py-24'>
+        
+        <div id='projects' className='max-w-screen-xl mx-auto py-24'>
             <div className=' md:flex justify-between items-center'>
                 <div className="project-box bg-black p-5" style={{ width: '350px', height: '400px', overflow: 'hidden' }}>
                     <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>

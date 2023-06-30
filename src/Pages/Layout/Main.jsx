@@ -12,7 +12,7 @@ const Main = () => {
         }, 2000);
     }, []);
     return (
-        <div className="bg-[#2a2c39]">
+        <div className="bg-[#2a2c39] overflow-hidden">
            {isLoading ? <Loader/> : <Outlet/>}
         </div>
     );

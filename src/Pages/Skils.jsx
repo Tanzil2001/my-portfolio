@@ -43,16 +43,16 @@ const Skils = () => {
     }, [controls]);
     return (
 
-        <div className="bg-[#252731]">
-            <div className='max-w-screen-xl mx-auto'>
+        <div id='skills' className="bg-[#252731]">
+            <div className='max-w-screen-xl mx-auto p-10'>
                 <div className=" md:flex py-24 items-center justify-between">
                     <div>
                         <p className="mb-5 text-slate-400 text-2xl border-dotted border-l-2 ps-2 border-slate-400">
                             My Skills
                         </p>
-                        <p className="text-white font-bold text-4xl">My Special Skills Tree</p>
+                        <p className="text-white font-bold text-4xl">My Special Skills <span className='hidden md:block'>Tree</span> </p>
                     </div>
-                    <div style={{ backgroundImage: `url("${tree}")`, height: '80vh' }} className="w-2/3 relative rounded-full">
+                    <div style={{ backgroundImage: `url("${tree}")`, height: '80vh' }} className="w-2/3 relative rounded-full hidden md:block">
                         {/* one */}
                         <div className="absolute top-11 h-16 w-0.5 bg-red-900 left-1/2 transform -translate-x-1 translate-y-16" />
                         <div className="absolute top-40 left-1/2 animate-pulse  transform -translate-x-1/2">
@@ -95,10 +95,10 @@ const Skils = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex gap-5 pb-10'>
+                <div className='md:flex xs:flex-col items-center justify-between gap-5 pb-10'>
                     <Tilt>
                         <motion.div
-                            className='h-[250px] mt-10 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            className='h-[250px] w-full  md:w-[200px] mt-10 rounded-full shadow-xl shadow-orange-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
                             initial={{ opacity: 0, x: -100 }}
                             animate={controls}
                             transition={{ duration: 0.5 }}
@@ -108,11 +108,12 @@ const Skils = () => {
                         >
                             <img className='w-32 ' src={html} alt="" />
                             <p className="text-white">HTML 5</p>
+                            <p className="text-white text-3xl">98 %</p>
                         </motion.div>
                     </Tilt>
                     <Tilt>
                         <motion.div
-                            className="h-[250px] w-[180px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center"
+                            className="h-[250px] w-full mt-10 md:mt-0 md:w-[180px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center"
                             initial={{ opacity: 0, x: -100 }}
                             animate={controls}
                             transition={{ duration: 0.5, delay: 0.2 }}
@@ -122,11 +123,12 @@ const Skils = () => {
                         >
                             <img className='w-32' src={css} alt="" />
                             <p className="text-white">CSS 3</p>
+                            <p className="text-white text-3xl">80 %</p>
                         </motion.div>
                     </Tilt>
                     <Tilt>
                         <motion.div
-                            className='h-[250px] -mt-5 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            className='h-[250px] mt-10 md:-mt-5 w-full md:w-[200px] rounded-full shadow-xl shadow-yellow-500 bg-[#2a2c39] card flex flex-col items-center justify-center'
                             initial={{ opacity: 0, x: -100 }}
                             animate={controls}
                             transition={{ duration: 0.5, delay: 0.4 }}
@@ -136,11 +138,12 @@ const Skils = () => {
                         >
                             <img className='w-32' src={js} alt="" />
                             <p className="text-white">Javascript</p>
+                            <p className="text-white text-3xl">80 %</p>
                         </motion.div>
                     </Tilt>
                     <Tilt>
                         <motion.div
-                            className='h-[250px] -mt-5 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            className='h-[250px] mt-10 md:-mt-5 w-full md:w-[200px] rounded-full shadow-xl shadow-blue-500 bg-[#2a2c39] card flex flex-col items-center justify-center'
                             initial={{ opacity: 0, x: -100 }}
                             animate={controls}
                             transition={{ duration: 0.5, delay: 0.6 }}
@@ -150,11 +153,12 @@ const Skils = () => {
                         >
                             <img className='w-32' src={react} alt="" />
                             <p className="text-white">React Js</p>
+                            <p className="text-white text-3xl">80 %</p>
                         </motion.div>
                     </Tilt>
                     <Tilt>
                         <motion.div
-                            className='h-[250px] w-[180px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            className='h-[250px] mt-10 md:mt-0 w-full md:w-[180px] rounded-full shadow-xl shadow-white bg-[#2a2c39] card flex flex-col items-center justify-center'
                             initial={{ opacity: 0, x: -100 }}
                             animate={controls}
                             transition={{ duration: 0.5, delay: 0.8 }}
@@ -164,11 +168,12 @@ const Skils = () => {
                         >
                             <img className='w-32' src={git} alt="" />
                             <p className="text-white">GitHub</p>
+                            <p className="text-white text-3xl">80 %</p>
                         </motion.div>
                     </Tilt>
                     <Tilt>
                         <motion.div
-                            className='h-[250px] mt-10 w-[200px] rounded-full shadow-xl shadow-blue-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
+                            className='h-[250px] mt-10 w-full md:w-[200px] rounded-full shadow-xl shadow-purple-600 bg-[#2a2c39] card flex flex-col items-center justify-center'
                             initial={{ opacity: 0, x: -100 }}
                             animate={controls}
                             transition={{ duration: 0.5, delay: 1 }}
@@ -179,6 +184,7 @@ const Skils = () => {
                         >
                             <img className='w-32' src={backend} alt="" />
                             <p className="text-white">Backend</p>
+                            <p className="text-white text-3xl">50 %</p>
                         </motion.div>
                     </Tilt>
                 </div>

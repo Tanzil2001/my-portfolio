@@ -15,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed z-10 flex flex-wrap items-center justify-between w-full bg-[#2a2c39] md:rounded-full p-5">
+        <nav className=" z-10 flex max-w-screen-xl w-full items-center justify-between bg-[#2a2c39] md:rounded-full p-5 mx-auto">
             <div className="flex items-center">
                 <div>
                     <span className="text-white text-xl font-bold">Web Hero</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
                     initial="hidden"
                     animate="visible"
                     variants={menuVariants}
-                    className="md:hidden w-full mt-4 bg-blue-950 rounded-full p-4"
+                    className="md:hidden w-full mt-4 bg-blue-950 p-4"
                 >
                     <ul className="flex flex-col list-none gap-4">
                         <li>
@@ -105,9 +105,7 @@ const Navbar = () => {
                     </ul>
                 </motion.div>
             )}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-4 md:ml-0">
-                Hire Me
-            </button>
+            
         </nav>
     );
 };
