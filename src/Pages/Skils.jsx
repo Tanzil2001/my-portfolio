@@ -44,7 +44,7 @@ const Skils = () => {
     return (
 
         <div id='skills' className="bg-[#252731]">
-            <div className='max-w-screen-xl mx-auto p-10'>
+            <div className='max-w-screen-xl mx-auto p-10 md:p-0'>
                 <div className=" md:flex py-24 items-center justify-between">
                     <div>
                         <p className="mb-5 text-slate-400 text-2xl border-dotted border-l-2 ps-2 border-slate-400">

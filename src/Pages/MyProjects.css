@@ -8,7 +8,7 @@
 .project-image {
     width: 100%;
     height: auto;
-    transition: transform 3s linear;
+    transition: transform 4s linear;
 }
 
 .image-wrapper:hover .project-image {

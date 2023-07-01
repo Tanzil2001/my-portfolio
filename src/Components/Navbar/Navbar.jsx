@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaEnvelope, FaFileAlt, FaLaptopCode, FaReadme, FaTimes, FaUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -15,98 +15,96 @@ const Navbar = () => {
     };
 
     return (
-        <nav className=" z-10 flex max-w-screen-xl w-full items-center justify-between bg-[#2a2c39] md:rounded-full p-5 mx-auto">
-            <div className="flex items-center">
-                <div>
-                    <span className="text-white text-xl font-bold">Web Hero</span>
-                </div>
-            </div>
+        <div className="flex flex-col items-end justify-start">
+            <nav className="max-w-screen-xl fixed top-0 z-10 w-full items-center justify-between bg-[#2a2c39] md:rounded-full p-5 mx-auto">
+                <div className="flex justify-between items-center w-full">
+                    <div className="md:flex md:items-center">
+                        <p className="text-white md:text-lg">Tanzil</p>
+                    </div>
 
-            <div className="flex items-center gap-4">
-                <div className="hidden md:block">
-                    <ul className="flex list-none gap-4">
-                        <li>
-                            <a href="#home" className="text-white">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services" className="text-white">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#skills" className="text-white">
-                                Skills
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" className="text-white">
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" className="text-white">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+                    {/* Desktop Menu */}
+                    <div className="hidden md:block">
+                        <ul className="list-none flex gap-5">
+                            <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                <a href="#home" className="text-white">
+                                    <FaUser />
+                                </a>
+                            </li>
+                            <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                <a href="#services" className="text-white">
+                                    <FaReadme />
+                                </a>
+                            </li>
+                            <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                <a href="#skills" className="text-white">
+                                    <FaLaptopCode />
+                                </a>
+                            </li>
+                            <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                <a href="#projects" className="text-white">
+                                    <FaFileAlt />
+                                </a>
+                            </li>
+                            <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                <a href="#contact" className="text-white">
+                                    <FaEnvelope />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Mobile Menu */}
+                    <div className="md:hidden">
+                        <button onClick={handleMenuToggle} className="text-white focus:outline-none">
+                            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                        </button>
+                    </div>
                 </div>
 
-                {/* Mobile Menu */}
-                <div className="md:hidden">
-                    <button
-                        onClick={handleMenuToggle}
-                        className="text-white focus:outline-none"
-                    >
-                        {isMenuOpen ? (
-                            <FaTimes size={24} />
-                        ) : (
-                            <FaBars size={24} />
-                        )}
-                    </button>
+                {/* Mobile Menu Dropdown */}
+                <div className="flex justify-between">
+                    {isMenuOpen && (
+                        <motion.div
+                            initial="hidden"
+                            animate="visible"
+                            variants={menuVariants}
+                            className="md:hidden w-full mt-4 bg-[#2a2c39] p-4"
+                        >
+                            <ul className="flex justify-between list-none gap-4">
+                                <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                    <a href="#home" className="text-white">
+                                        <FaUser />
+                                    </a>
+                                </li>
+                                <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                    <a href="#services" className="text-white">
+                                        <FaReadme />
+                                    </a>
+                                </li>
+                                <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                    <a href="#skills" className="text-white">
+                                        <FaLaptopCode />
+                                    </a>
+                                </li>
+                                <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                    <a href="#projects" className="text-white">
+                                        <FaFileAlt />
+                                    </a>
+                                </li>
+                                <li className='bg-black p-2 rounded-full shadow-lg shadow-blue-600'>
+                                    <a href="#contact" className="text-white">
+                                        <FaEnvelope />
+                                    </a>
+                                </li>
+                            </ul>
+                        </motion.div>
+                    )}
                 </div>
-            </div>
+            </nav>
+        </div>
 
-            {/* Mobile Menu Dropdown */}
-            {isMenuOpen && (
-                <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={menuVariants}
-                    className="md:hidden w-full mt-4 bg-blue-950 p-4"
-                >
-                    <ul className="flex flex-col list-none gap-4">
-                        <li>
-                            <a href="#home" className="text-white">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services" className="text-white">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#skills" className="text-white">
-                                Skills
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" className="text-white">
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" className="text-white">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </motion.div>
-            )}
-            
-        </nav>
+
+
     );
 };
 

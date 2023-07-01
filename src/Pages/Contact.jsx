@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import gif from '../assets/tech/84924-email-sent.gif';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
 
@@ -28,16 +29,22 @@ const Contact = () => {
 
     return (
         <div id='contact' className="py-24  bg-[#252731]">
-            <div className='max-w-screen-xl mx-auto'>
-                <div className='flex gap-5'>
-                    <form ref={form} onSubmit={sendEmail} className='text-white text-lg font-semibold space-y-3 w-1/2'>
+            <div className='max-w-screen-xl mx-auto p-10 md:p-0'>
+                <div className='text-center text-white text-5xl font-semibold mb-32'>
+                    <p>Contact With Me</p>
+                </div>
+                <div className='flex flex-col-reverse md:flex-row  gap-5'>
+                    <form ref={form} onSubmit={sendEmail} className='text-white text-lg font-semibold space-y-3 md:w-1/2 w-full mb-10 md:mb-0'>
                         <input style={glassStyle} type="text" name="name" placeholder='Your Name' required className='block w-full shadow-lg shadow-white' />
                         <input style={glassStyle} type="email" name="email" placeholder='Your Email' required className='block w-full shadow-lg shadow-white' />
                         <input style={glassStyle} type="text" name="subject" required placeholder='Subject' className='block w-full shadow-lg shadow-white' />
                         <textarea className='w-full shadow-lg shadow-white' style={glassStyle} name="message" id="" cols="30" rows="10" placeholder='Text Message' required></textarea>
-                        <input style={glassStyle} type="submit" value="submit" className='block w-full shadow-lg shadow-white hover:shadow-blue-600 ' />
+                        <input style={glassStyle} type="submit" value="submit" className='block w-1/2 md:w-full shadow-lg shadow-white hover:shadow-blue-600 ' />
                     </form>
                     <img className=' rounded-full shadow-xl shadow-blue-600' src={gif} alt="" />
+                </div>
+                <div className='bg-[#252731] shadow-xl shadow-green-600 md:w-1/2 w-full mx-auto rounded-full text-2xl text-green-600 text-center mt-10  p-5'>
+                    <p className='flex items-center justify-center gap-3'><FaWhatsapp/><span>(+880) 1912818889</span></p>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ const Main = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 2000);
+        }, 3000);
     }, []);
     return (
         <div className="bg-[#2a2c39] overflow-hidden">
