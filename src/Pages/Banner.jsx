@@ -1,5 +1,5 @@
 import Navbar from '../Components/Navbar/Navbar';
-import bg from '../assets/Animated Shape (2).svg';
+import bg from '../assets/tech/Animated Shape (3).svg';
 import mypic from '../assets/img.png';
 import mbg from '../assets/Blob Group.svg'
 import { TypeAnimation } from 'react-type-animation';
