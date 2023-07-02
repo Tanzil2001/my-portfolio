@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import gif from '../assets/tech/84924-email-sent.gif';
-import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import {  FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
 

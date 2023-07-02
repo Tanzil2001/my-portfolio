@@ -6,9 +6,14 @@ import '../Pages/MyProjects.css'
 import prj4 from '../assets/projetcs-pic/screencapture-cars-doctor-4e14a-web-app-2023-07-01-21_01_45.jpg'
 import prj5 from '../assets/projetcs-pic/screencapture-bistro-boss-9cf4a-web-app-2023-07-01-21_12_38.jpg'
 import prj6 from '../assets/projetcs-pic/screencapture-cozy-sorbet-7917c0-netlify-app-2023-07-01-21_20_45.jpg'
+import { useEffect } from 'react';
+import AOS from 'aos';
+
 
 const MyProjects = () => {
-
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
     return (
 
         <div id='projects' className='max-w-screen-xl mx-auto py-24 px-10 md:px-0'>
@@ -17,7 +22,7 @@ const MyProjects = () => {
             </div>
             {/* one */}
             <div className=' grid grid-cols-1 md:grid-cols-3 gap-5 items-center '>
-                <div className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
+                <div data-aos="zoom-in-right" className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
                     <div className="project-box  w-full " style={{ height: '400px', overflow: 'hidden' }}>
                         <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <img
@@ -29,12 +34,12 @@ const MyProjects = () => {
                         </div>
                     </div>
                     <div className='text-white flex justify-between mt-5'>
-                            <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
-                            <a href="">Code Link</a>
-                        </div>
+                        <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
+                        <a href="">Code Link</a>
+                    </div>
                 </div>
                 {/* two */}
-                <div className='bg-[#252731] p-5 mt-8 shadow-xl  shadow-blue-600'>
+                <div data-aos="zoom-in-down" className='bg-[#252731] p-5 mt-8 shadow-xl  shadow-blue-600'>
                     <div className="project-box  w-full" style={{ height: '400px', overflow: 'hidden' }}>
                         <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <img
@@ -46,12 +51,12 @@ const MyProjects = () => {
                         </div>
                     </div>
                     <div className='text-white flex justify-between mt-5'>
-                            <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
-                            <a href="">Code Link</a>
-                        </div>
+                        <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
+                        <a href="">Code Link</a>
+                    </div>
                 </div>
                 {/* three */}
-                <div className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
+                <div data-aos="zoom-in-left" className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
                     <div className="project-box  w-full" style={{ height: '400px', overflow: 'hidden' }}>
                         <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <img
@@ -63,12 +68,14 @@ const MyProjects = () => {
                         </div>
                     </div>
                     <div className='text-white flex justify-between mt-5'>
-                            <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
-                            <a href="">Code Link</a>
-                        </div>
+                        <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
+                        <a href="">Code Link</a>
+                    </div>
                 </div>
                 {/* four */}
-                <div className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
+                <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
                     <div className="project-box  w-full" style={{ height: '400px', overflow: 'hidden' }}>
                         <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <img
@@ -80,12 +87,13 @@ const MyProjects = () => {
                         </div>
                     </div>
                     <div className='text-white flex justify-between mt-5'>
-                            <a href="https://cars-doctor-4e14a.web.app/#slide1">Live Link</a>
-                            <a href="">Code Link</a>
-                        </div>
+                        <a href="https://cars-doctor-4e14a.web.app/#slide1">Live Link</a>
+                        <a href="">Code Link</a>
+                    </div>
                 </div>
                 {/* five */}
-                <div className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
+                <div data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
                     <div className="project-box  w-full" style={{ height: '400px', overflow: 'hidden' }}>
                         <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <img
@@ -97,12 +105,14 @@ const MyProjects = () => {
                         </div>
                     </div>
                     <div className='text-white flex justify-between mt-5'>
-                            <a href="https://bistro-boss-9cf4a.web.app/">Live Link</a>
-                            <a href="">Code Link</a>
-                        </div>
+                        <a href="https://bistro-boss-9cf4a.web.app/">Live Link</a>
+                        <a href="">Code Link</a>
+                    </div>
                 </div>
                 {/* six*/}
-                <div className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
+                <div data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" className='bg-[#252731] p-5 mt-8 shadow-xl shadow-blue-600'>
                     <div className="project-box  w-full" style={{ height: '400px', overflow: 'hidden' }}>
                         <div className="image-wrapper" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
                             <img
@@ -114,9 +124,9 @@ const MyProjects = () => {
                         </div>
                     </div>
                     <div className='text-white flex justify-between mt-5'>
-                            <a href="https://cozy-sorbet-7917c0.netlify.app/#">Live Link</a>
-                            <a href="">Code Link</a>
-                        </div>
+                        <a href="https://cozy-sorbet-7917c0.netlify.app/#">Live Link</a>
+                        <a href="">Code Link</a>
+                    </div>
                 </div>
             </div>
         </div>

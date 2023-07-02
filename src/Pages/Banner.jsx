@@ -7,19 +7,31 @@ import animation from '../assets/109865-new-app-development-on-desktop.gif';
 import resume from '../assets/projetcs-pic/tanzil.pdf';
 import { FaCloudUploadAlt, FaUser } from 'react-icons/fa';
 import AboutMe from './AboutMe';
+import GoogleFontLoader from 'react-google-font-loader';
 
 
 const Banner = () => {
 
     return (
         <>
-
+             <GoogleFontLoader
+                fonts={[
+                    {
+                        font: 'Racing Sans One',
+                        weights: [400, 700],
+                    },
+                    {
+                        font: 'Lobster Two',
+                        weights: [400, '400i', 700],
+                    },
+                ]}
+            />
             <div style={{ backgroundImage: `url("${bg}")`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} id='home' className="pb-8">
                 <div className='max-w-screen-xl mx-auto'>
                     <Navbar />
                     <div className=' md:pt-40 pt-72  md:flex xs:flex-col items-center justify-between p-10 md:p-0'>
                         <div className='md:w-1/2 xs:full'>
-                            <p className='-mt-40 text-white text-5xl mb-10 font-bold'>Hello Im <br /> Barakat Tanzil</p>
+                            <p style={{ fontFamily:'Lobster Two' }} className='-mt-40 text-white text-5xl mb-10 font-bold'>Hello Im <br /> Barakat Tanzil</p>
                             <img className='rounded-full w-full md:w-[200px]  my-5' src={animation} alt="" />
                             <TypeAnimation
                                 sequence={[
@@ -32,7 +44,7 @@ const Banner = () => {
                                 ]}
                                 wrapper="span"
                                 speed={30}
-                                style={{ fontSize: '2em', display: 'inline-block', color: 'white' }}
+                                style={{ fontFamily:'Racing Sans One', fontSize: '2em', display: 'inline-block', color: 'white' }}
                                 repeat={Infinity}
                             />
                             <div className='my-10 flex items-center justify-start gap-5'>
