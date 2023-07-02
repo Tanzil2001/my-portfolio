@@ -2,7 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <footer className="footer footer-center text-white p-10 bg-base-200 text-base-content rounded">
     <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center justify-center gap-4">
             <a href="#about" className="">About Me</a>

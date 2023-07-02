@@ -35,7 +35,7 @@ const MyProjects = () => {
                     </div>
                     <div className='text-white flex justify-between mt-5'>
                         <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
-                        <a href="">Code Link</a>
+                        <a href="https://github.com/Tanzil2001/chefs-recipe-web">Code Link</a>
                     </div>
                 </div>
                 {/* two */}
@@ -52,7 +52,7 @@ const MyProjects = () => {
                     </div>
                     <div className='text-white flex justify-between mt-5'>
                         <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
-                        <a href="">Code Link</a>
+                        <a href="https://github.com/Tanzil2001/toy-shop-web">Code Link</a>
                     </div>
                 </div>
                 {/* three */}
@@ -69,7 +69,7 @@ const MyProjects = () => {
                     </div>
                     <div className='text-white flex justify-between mt-5'>
                         <a className='' href="https://assignment-10-cfefb.web.app/">Live Link</a>
-                        <a href="">Code Link</a>
+                        <a href="https://github.com/Tanzil2001/dance-school-web">Code Link</a>
                     </div>
                 </div>
                 {/* four */}
@@ -88,7 +88,7 @@ const MyProjects = () => {
                     </div>
                     <div className='text-white flex justify-between mt-5'>
                         <a href="https://cars-doctor-4e14a.web.app/#slide1">Live Link</a>
-                        <a href="">Code Link</a>
+                        <a href="https://github.com/Tanzil2001/cars-doctor">Code Link</a>
                     </div>
                 </div>
                 {/* five */}
@@ -106,7 +106,7 @@ const MyProjects = () => {
                     </div>
                     <div className='text-white flex justify-between mt-5'>
                         <a href="https://bistro-boss-9cf4a.web.app/">Live Link</a>
-                        <a href="">Code Link</a>
+                        <a href="https://github.com/Tanzil2001/bistro-boss">Code Link</a>
                     </div>
                 </div>
                 {/* six*/}
@@ -125,7 +125,7 @@ const MyProjects = () => {
                     </div>
                     <div className='text-white flex justify-between mt-5'>
                         <a href="https://cozy-sorbet-7917c0.netlify.app/#">Live Link</a>
-                        <a href="">Code Link</a>
+                        
                     </div>
                 </div>
             </div>

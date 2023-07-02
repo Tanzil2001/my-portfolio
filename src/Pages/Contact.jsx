@@ -2,6 +2,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import gif from '../assets/tech/84924-email-sent.gif';
 import {  FaWhatsapp } from 'react-icons/fa';
+import {  SiGmail } from 'react-icons/si';
 
 const Contact = () => {
 
@@ -45,6 +46,9 @@ const Contact = () => {
                 </div>
                 <div className='bg-[#252731] shadow-xl shadow-green-600 md:w-1/2 w-full mx-auto rounded-full text-2xl text-green-600 text-center mt-10  p-5'>
                     <p className='flex items-center justify-center gap-3'><FaWhatsapp/><span>(+880) 1912818889</span></p>
+                </div>
+                <div className='bg-[#252731] shadow-xl shadow-green-600 md:w-1/2 w-full mx-auto rounded-full text-2xl text-green-600 text-center mt-10  p-5'>
+                    <p className='flex items-center justify-center gap-3'><SiGmail/><span>barakattanzil@gmail.com</span></p>
                 </div>
             </div>
         </div>

@@ -52,7 +52,7 @@ const Skils = () => {
                         </p>
                         <p className="text-white font-bold text-4xl">My Special Skills <span className='hidden md:block'>Tree</span> </p>
                     </div>
-                    <div style={{ backgroundImage: `url("${tree}")`, height: '80vh' }} className="w-2/3 relative rounded-full hidden md:block">
+                    <div style={{ backgroundImage: `url("${tree}")`, height: '80vh', backgroundRepeat: 'no-repeat' }} className="w-2/3 relative rounded-full hidden md:block">
                         {/* one */}
                         <div className="absolute top-11 h-16 w-0.5 bg-red-900 left-1/2 transform -translate-x-1 translate-y-16" />
                         <div className="absolute top-40 left-1/2 animate-pulse  transform -translate-x-1/2">

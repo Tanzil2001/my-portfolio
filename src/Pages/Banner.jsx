@@ -4,7 +4,7 @@ import mypic from '../assets/img.png';
 import mbg from '../assets/Blob Group.svg'
 import { TypeAnimation } from 'react-type-animation';
 import animation from '../assets/109865-new-app-development-on-desktop.gif';
-import resume from '../assets/projetcs-pic/tanzil.pdf';
+import resume from '../assets/projetcs-pic/Resume.pdf';
 import { FaCloudUploadAlt, FaUser } from 'react-icons/fa';
 import AboutMe from './AboutMe';
 import GoogleFontLoader from 'react-google-font-loader';
@@ -48,7 +48,7 @@ const Banner = () => {
                                 repeat={Infinity}
                             />
                             <div className='my-10 flex items-center justify-start gap-5'>
-                                <a href={resume} className="relative inline-flex items-center justify-start px-6 py-3  overflow-hidden font-medium transition-all bg-slate-700 shadow-lg shadow-blue-600 rounded-xl group">
+                                <a href={resume} download="resume" className="relative inline-flex items-center justify-start px-6 py-3  overflow-hidden font-medium transition-all bg-slate-700 shadow-lg shadow-blue-600 rounded-xl group">
                                     <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-slate-700 rounded group-hover:-mr-4 group-hover:-mt-4">
                                         <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
                                     </span>
